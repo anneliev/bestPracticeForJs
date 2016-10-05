@@ -1,0 +1,51 @@
+Best practice for JavaScript
+  Use 2 or 4 spaces for indentation. Avoid tabs since text editors interpent them differntly.
+
+  Name your variables with a letter first and use camelCase, i.e. first new word in the name starts with an uppercase. Avoid using international signs for naming, such as $.
+
+  Declare varibles at the top of the script or function. It's cleaner and good to have them in the same place, makes it easier to find them. Remeber to use the var keyword when declaring local variables, otherwise they become global.
+
+  When using loops, place the first curly bracket at the end of the first line, after a space {  and the last one by itself on the row
+  }
+  Avoid making your loops run through too much code inside the statement, for example .length, instead declare variables outside of them.
+
+  Minimize the use of global variables because they might be overwritten later if other scripts are added.
+
+Likheter och skillander 
+Angående variabler, loopar och globala variabler är sidorna jag läst på överens. Skillnaden är angående indentering, vissa vill ha 2 mellanslag medan andra tycker 4 är bäst. Ingen föredrar tabbar.
+
+
+[1] https://www.thinkful.com/learn/javascript-best-practices-1/#Make-it-Understandable
+Varibler och namngivning
+Namnge en variabel/funktion så att den är kort och lätt att förstå. Undvik att namnge värden med variabelnamn.
+Globala/lokala
+Undvik globala variabler då de kan bli överskrivna av andra sidor som blit tillagda senare i koden. Använd istället closures. 
+Kommentater
+Kommentera inte mer än nödvändigt och använd helst /* */ då det är lätt att råka ta bort //
+Loopar
+Undvik DOMmanipulation i loopar. Skapa hellre en vaiabel för t.ex. .lenght än att låta loopen gå igenom en hel array varje loopning.
+
+
+[2] http://www.w3schools.com/js/js_best_practices.asp
+[3] http://www.w3schools.com/js/js_conventions.asp
+Indentering
+Använd 4 mellanslag i kodblock. Undvik tabbar då olika texteditorer tolkar tabbar på olika sätt.
+Variabler och namngivning
+Börja namnet med en bokstav. w3school använder camelCase.
+Börja inte namnet med $ då det kan uppstå konflikter med JS bibliotek.
+Variabler deklarering
+Deklarera alltid lokala variabler, annars blir de globala. Deklarera dem högst upp då det blir tydligare, de är samlade på en plats, gör det lättare att undvika oönskade globala variabler.
+Loopar
+Sätt första { på första raden, med ett mellanslag och sista } på en egen rad sist.
+Loopar kör alla statement varje gång den loopar så gör hellre t.ex. .length till en variabel uanför loopen. Då går det snabbare.
+Globala/lokala
+Undvik globala då de kan bli överskrivna/ersatta av senare scripts.
+
+[4] https://github.com/feross/standard/blob/master/RULES.md#javascript-standard-style
+Använd 2 mellanslag.
+Deklarera variabler på rader efter varandra, i varsitt statement
+'' single quotes för strängar, mellanslag efter keywords och kommatecken.
+else statement bör vara på samma rad som deras {}
+
+
+
